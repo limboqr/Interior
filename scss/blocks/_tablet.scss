@@ -1,0 +1,56 @@
+@media (max-width: 1140px) {
+   .order__content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 64px 0;
+   }
+}
+
+@media (max-width: 1024px) {
+   .container {
+      max-width: 816px;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+
+   .home-wrapper {
+      height: 735px;
+      background-position: center;
+      background-size: cover;
+   }
+
+   .choice__item {
+      height: 266px;
+   }
+
+   .special__cards {
+      gap: 44px 28px;
+   }
+
+   .product-catalog__cards {
+      gap: 44px 28px;
+   }
+
+   .order__buttons {
+      margin-top: 32px;
+   }
+
+   .order__button--tablet {
+      color: $white;
+      background: $black;
+   }
+
+   .order-form {
+      width: 376px;
+   }
+
+   .footer__logo {
+      display: none;
+   }
+}
+
+@media (max-width: 820px) {
+   .product-card {
+      flex-basis: 344px;
+   }
+}

@@ -1,0 +1,47 @@
+// * Fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@600&family=Roboto&display=swap");
+
+// * Basic
+
+.container {
+   max-width: 1230px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+* {
+   font-family: $font-main;
+   line-height: normal;
+}
+
+img {
+   max-width: 100%;
+}
+
+.title {
+   margin-bottom: 32px;
+   font-size: 48px;
+   font-weight: 600;
+   color: $black;
+}
+
+button {
+   background-color: transparent;
+}
+
+::-webkit-scrollbar {
+   width: 8px;
+   height: 8px;
+}
+
+::-webkit-scrollbar-track {
+   -webkit-box-shadow: 5px 5px 5px 0px rgba(120, 120, 120, 0.2) inset;
+   background-color: #f7f6f6;
+}
+
+::-webkit-scrollbar-thumb {
+   border-bottom-left-radius: 3px;
+   border-bottom-right-radius: 3px;
+   background: linear-gradient(180deg, #5c5c5c, #aaaaaa);
+}

@@ -1,0 +1,253 @@
+.home-wrapper {
+   background: url(../img/main/home/bg.jpg) no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding-top: 16px;
+   height: 735px;
+}
+
+.home__title {
+   margin: 63px 0 16px;
+   font-size: 64px;
+   font-weight: 600;
+   line-height: 109.375%;
+   color: $white;
+   animation: home-title 0.5s ease-in-out 0.4s 1 normal backwards;
+
+   @keyframes home-title {
+      0% {
+         transform: translateX(-80%);
+         opacity: 0;
+      }
+
+      100% {
+         transform: translateX(0);
+         opacity: 1;
+      }
+   }
+}
+
+.home__text {
+   margin-bottom: 16px;
+   font-size: 24px;
+   line-height: 133.333%;
+   color: $white;
+   animation: home-text 0.6s ease-in-out 0.4s 1 normal backwards;
+
+   @keyframes home-text {
+      0% {
+         transform: translateX(-80%);
+         opacity: 0;
+      }
+
+      100% {
+         transform: translateX(0);
+         opacity: 1;
+      }
+   }
+}
+
+.home__link {
+   font-size: 16px;
+   line-height: 150%;
+   color: $white;
+   text-decoration-line: underline;
+   transition: all 0.2s;
+   animation: home-link 0.7s ease-in-out 0.4s 1 normal backwards;
+
+   @keyframes home-link {
+      0% {
+         transform: translateX(-80%);
+         opacity: 0;
+      }
+
+      100% {
+         transform: translateX(0);
+         opacity: 1;
+      }
+   }
+}
+
+.choice {
+   padding-top: 64px;
+
+   &__contant {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 32px;
+   }
+
+   &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 415px;
+      grid-column: span 4;
+      transition: all 0.2s;
+
+      &:hover {
+         transform: scale(1.03);
+         transition: all 0.3s ease-in-out;
+      }
+   }
+
+   &__item--big {
+      grid-column: span 6;
+   }
+
+   &__text {
+      color: $white;
+      font-size: 34px;
+      font-weight: 600;
+   }
+
+   &__item--rest {
+      background: url(../img/main/choice/rest.jpg) no-repeat;
+      background-size: cover;
+   }
+
+   &__item--works {
+      background: url(../img/main/choice/works.jpg) no-repeat;
+      background-size: cover;
+   }
+
+   &__item--kitchens {
+      background: url(../img/main/choice/kitchens.jpg) no-repeat;
+      background-size: cover;
+   }
+
+   &__item--child {
+      background: url(../img/main/choice/child.jpg) no-repeat;
+      background-size: cover;
+   }
+
+   &__item--bathroom {
+      background: url(../img/main/choice/bathroom.jpg) no-repeat;
+      background-size: cover;
+   }
+}
+
+.special {
+   padding: 64px 0 73px;
+
+   &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 32px;
+   }
+}
+
+.product-catalog {
+   padding-bottom: 64px;
+
+   &__cards {
+      margin-bottom: 39px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 66px 32px;
+
+      &--catalog-m {
+         gap: 62px 32px;
+      }
+   }
+}
+
+.product-card {
+   flex-basis: 378px;
+
+   & img {
+      transition: all 0.2s;
+
+      &:hover {
+         transform: scale(1.08);
+         transition: all 0.3s ease-in-out;
+      }
+   }
+
+   &:hover ::after {
+      opacity: 1;
+   }
+
+   &:hover ::before {
+      opacity: 1;
+   }
+
+   &__img {
+      overflow: hidden;
+      position: relative;
+
+      &::after {
+         content: "";
+         position: absolute;
+         background: url(../img/shopping.svg) no-repeat;
+         width: 24px;
+         height: 24px;
+         top: 10px;
+         right: 55px;
+         z-index: 10;
+         opacity: 0;
+         transition: opacity 0.3s ease-in-out;
+      }
+
+      &::before {
+         content: "";
+         position: absolute;
+         background: url(../img/heart.svg) no-repeat;
+         width: 24px;
+         height: 24px;
+         top: 10px;
+         right: 10px;
+         z-index: 10;
+         opacity: 0;
+         transition: opacity 0.3s ease-in-out;
+      }
+   }
+
+   &__subtitle {
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 24px;
+      font-weight: 500;
+      color: $black;
+   }
+
+   &__text {
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: $text;
+   }
+
+   &__price-box {
+      display: flex;
+      gap: 0 32px;
+   }
+
+   &__price {
+      font-size: 24px;
+      font-weight: 500;
+      color: #050505;
+
+      &::after {
+         content: "руб.";
+      }
+   }
+
+   &__price--line-through {
+      text-decoration-line: line-through;
+      color: $text;
+   }
+
+   &__link {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      color: $black;
+      text-decoration-line: underline;
+      transition: all 0.2s;
+
+      &:hover {
+         color: $text;
+         transition: all 0.3s ease-in-out;
+      }
+   }
+}

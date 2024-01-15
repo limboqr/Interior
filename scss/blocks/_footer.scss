@@ -1,0 +1,116 @@
+.footer {
+   background-color: #f7f6f6;
+   padding: 32px 0 56.6px;
+
+   &__content {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__logo {
+      color: #000;
+      font-size: 36px;
+      font-weight: 600;
+      flex-basis: 198px;
+      margin-right: 20px;
+   }
+
+   &__cols {
+      display: flex;
+      flex-basis: 336px;
+      justify-content: space-between;
+   }
+
+   &__col {
+      display: flex;
+      flex-direction: column;
+      gap: 12px 0;
+   }
+
+   &__subtitle {
+      font-size: 24px;
+      font-weight: 500;
+      color: $black;
+   }
+
+   &__link {
+      font-size: 14px;
+      font-weight: 500;
+      color: $text;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+         color: #333;
+         text-decoration: underline;
+      }
+   }
+
+   &__social {
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+   }
+
+   &__social path {
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+         transition: all 0.3s;
+         fill: $black;
+      }
+   }
+}
+
+.footer-form {
+   flex-basis: 260px;
+   display: flex;
+   flex-direction: column;
+   gap: 8px 0;
+
+   &__text {
+      color: $black;
+      font-size: 12px;
+      font-weight: 400;
+   }
+
+   &__input {
+      width: 260px;
+      height: 40px;
+      padding: 12px 17px;
+      background: #fff;
+      border: 1px solid #c4c4c4;
+      box-sizing: border-box;
+      border-radius: 16px;
+
+      font-size: 15px;
+      font-weight: 500;
+      color: #333;
+
+      &::placeholder {
+         font-size: 12px;
+         font-weight: 400;
+         color: #c4c4c4;
+      }
+   }
+
+   &__button {
+      background: #ded7d769;
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
+      border-radius: 16px;
+      padding: 0 93px 0 85px;
+      width: 260px;
+      height: 40px;
+      transition: all 0.2s ease-in-out;
+
+      color: $black;
+      font-size: 12px;
+      font-weight: 400;
+
+      &:hover {
+         background-color: $black;
+         color: $white;
+         transition: all 0.3s;
+      }
+   }
+}
